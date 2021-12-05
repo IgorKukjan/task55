@@ -1,0 +1,189 @@
+21:03:47.390 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:47.590 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:47.798 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:48.002 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:48.206 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:48.407 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:48.612 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:48.815 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:49.019 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:49.219 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:49.424 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:49.640 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:49.844 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:50.049 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:50.251 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:50.455 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:50.658 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:50.873 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:51.076 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:51.279 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:51.483 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:51.683 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:51.889 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:52.093 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:52.293 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:52.501 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:52.704 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:52.910 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:53.111 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:53.313 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:53.518 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:53.720 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:53.924 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:54.128 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:54.332 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:54.533 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:54.734 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:54.935 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:55.137 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:55.339 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:55.540 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:55.743 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:55.945 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:56.147 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:56.350 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:56.555 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:56.759 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:56.962 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:57.167 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:57.367 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:57.576 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:57.779 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:57.985 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:58.189 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:58.393 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:58.595 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:03:58.798 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:05:37.556 [main] INFO  by.task.kukjan.parser.ShipParser - Lines parsed successfully
+21:05:37.565 [pool-2-thread-5] INFO  by.task.kukjan.entity.Ship - Ship 5 started load
+21:05:37.566 [pool-2-thread-8] INFO  by.task.kukjan.entity.Ship - Ship 8 started unload
+21:05:37.566 [pool-2-thread-1] INFO  by.task.kukjan.entity.Ship - Ship 1 started load
+21:05:37.567 [pool-2-thread-3] INFO  by.task.kukjan.entity.Ship - Ship 3 started load
+21:05:37.568 [pool-2-thread-6] INFO  by.task.kukjan.entity.Ship - Ship 6 started unload
+21:05:37.568 [pool-2-thread-9] INFO  by.task.kukjan.entity.Ship - Ship 9 started load
+21:05:37.569 [pool-2-thread-4] INFO  by.task.kukjan.entity.Ship - Ship 4 started unload
+21:05:37.568 [pool-2-thread-2] INFO  by.task.kukjan.entity.Ship - Ship 2 started unload
+21:05:37.566 [pool-2-thread-10] INFO  by.task.kukjan.entity.Ship - Ship 10 started unload
+21:05:37.570 [pool-2-thread-7] INFO  by.task.kukjan.entity.Ship - Ship 7 started load
+21:05:37.603 [pool-2-thread-2] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:05:37.603 [pool-2-thread-4] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:05:37.603 [pool-2-thread-3] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:05:37.603 [pool-2-thread-5] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:05:37.603 [pool-2-thread-6] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:05:37.603 [pool-2-thread-10] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:05:37.604 [pool-2-thread-2] INFO  by.task.kukjan.entity.Port - Obtained pier 7
+21:05:37.604 [pool-2-thread-4] INFO  by.task.kukjan.entity.Port - Obtained pier 6
+21:05:37.604 [pool-2-thread-2] INFO  by.task.kukjan.entity.Pier - Pier 7 processes ship 2:Started
+21:05:37.603 [pool-2-thread-7] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:05:37.603 [pool-2-thread-1] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:05:37.603 [pool-2-thread-8] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:05:37.603 [pool-2-thread-9] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:05:37.604 [pool-2-thread-4] INFO  by.task.kukjan.entity.Pier - Pier 6 processes ship 4:Started
+21:05:37.604 [pool-2-thread-10] INFO  by.task.kukjan.entity.Port - Obtained pier 5
+21:05:37.604 [pool-2-thread-10] INFO  by.task.kukjan.entity.Pier - Pier 5 processes ship 10:Started
+21:05:37.604 [pool-2-thread-3] INFO  by.task.kukjan.entity.Port - Obtained pier 4
+21:05:37.605 [pool-2-thread-3] INFO  by.task.kukjan.entity.Pier - Pier 4 processes ship 3:Started
+21:05:37.605 [pool-2-thread-5] INFO  by.task.kukjan.entity.Port - Obtained pier 3
+21:05:37.605 [pool-2-thread-6] INFO  by.task.kukjan.entity.Port - Obtained pier 2
+21:05:37.605 [pool-2-thread-5] INFO  by.task.kukjan.entity.Pier - Pier 3 processes ship 5:Started
+21:05:37.605 [pool-2-thread-7] INFO  by.task.kukjan.entity.Port - Obtained pier 1
+21:05:37.605 [pool-2-thread-6] INFO  by.task.kukjan.entity.Pier - Pier 2 processes ship 6:Started
+21:05:37.606 [pool-2-thread-7] INFO  by.task.kukjan.entity.Pier - Pier 1 processes ship 7:Started
+21:05:37.606 [pool-2-thread-1] INFO  by.task.kukjan.entity.Port - Waiting for pier
+21:05:37.606 [pool-2-thread-8] INFO  by.task.kukjan.entity.Port - Waiting for pier
+21:05:37.607 [pool-2-thread-9] INFO  by.task.kukjan.entity.Port - Waiting for pier
+21:05:37.707 [pool-2-thread-5] INFO  by.task.kukjan.entity.Port - Start load
+21:05:37.708 [pool-2-thread-5] INFO  by.task.kukjan.entity.Port - Complete load, container amount: 2
+21:05:37.708 [pool-2-thread-5] INFO  by.task.kukjan.entity.Pier - Pier 3 processed ship 5 : Complete
+21:05:37.708 [pool-2-thread-7] INFO  by.task.kukjan.entity.Port - Start load
+21:05:37.708 [pool-2-thread-5] INFO  by.task.kukjan.entity.Port - Pier released
+21:05:37.708 [pool-2-thread-7] INFO  by.task.kukjan.entity.Port - Complete load, container amount: 1
+21:05:37.708 [pool-2-thread-1] INFO  by.task.kukjan.entity.Port - Obtained pier 3
+21:05:37.708 [pool-2-thread-5] INFO  by.task.kukjan.entity.Ship - EXIT: Ship 5 ended load
+21:05:37.708 [pool-2-thread-7] INFO  by.task.kukjan.entity.Pier - Pier 1 processed ship 7 : Complete
+21:05:37.708 [pool-2-thread-6] INFO  by.task.kukjan.entity.Port - Start unload
+21:05:37.708 [pool-2-thread-1] INFO  by.task.kukjan.entity.Pier - Pier 3 processes ship 1:Started
+21:05:37.709 [pool-2-thread-7] INFO  by.task.kukjan.entity.Port - Pier released
+21:05:37.709 [pool-2-thread-6] INFO  by.task.kukjan.entity.Port - Complete load, container amount: 2
+21:05:37.709 [pool-2-thread-7] INFO  by.task.kukjan.entity.Ship - EXIT: Ship 7 ended load
+21:05:37.709 [pool-2-thread-6] INFO  by.task.kukjan.entity.Pier - Pier 2 processed ship 6 : Complete
+21:05:37.709 [pool-2-thread-8] INFO  by.task.kukjan.entity.Port - Obtained pier 1
+21:05:37.709 [pool-2-thread-8] INFO  by.task.kukjan.entity.Pier - Pier 1 processes ship 8:Started
+21:05:37.709 [pool-2-thread-6] INFO  by.task.kukjan.entity.Port - Pier released
+21:05:37.709 [pool-2-thread-6] INFO  by.task.kukjan.entity.Ship - EXIT: Ship 6 ended unload
+21:05:37.709 [pool-2-thread-9] INFO  by.task.kukjan.entity.Port - Obtained pier 2
+21:05:37.710 [pool-2-thread-9] INFO  by.task.kukjan.entity.Pier - Pier 2 processes ship 9:Started
+21:05:37.716 [pool-2-thread-3] INFO  by.task.kukjan.entity.Port - Start load
+21:05:37.716 [pool-2-thread-3] INFO  by.task.kukjan.entity.Port - Complete load, container amount: 1
+21:05:37.716 [pool-2-thread-3] INFO  by.task.kukjan.entity.Pier - Pier 4 processed ship 3 : Complete
+21:05:37.716 [pool-2-thread-4] INFO  by.task.kukjan.entity.Port - Start unload
+21:05:37.716 [pool-2-thread-3] INFO  by.task.kukjan.entity.Port - Pier released
+21:05:37.717 [pool-2-thread-4] INFO  by.task.kukjan.entity.Port - Complete load, container amount: 2
+21:05:37.717 [pool-2-thread-3] INFO  by.task.kukjan.entity.Ship - EXIT: Ship 3 ended load
+21:05:37.717 [pool-2-thread-4] INFO  by.task.kukjan.entity.Pier - Pier 6 processed ship 4 : Complete
+21:05:37.717 [pool-2-thread-10] INFO  by.task.kukjan.entity.Port - Start unload
+21:05:37.717 [pool-2-thread-4] INFO  by.task.kukjan.entity.Port - Pier released
+21:05:37.717 [pool-2-thread-10] INFO  by.task.kukjan.entity.Port - Complete load, container amount: 3
+21:05:37.717 [pool-2-thread-10] INFO  by.task.kukjan.entity.Pier - Pier 5 processed ship 10 : Complete
+21:05:37.717 [pool-2-thread-4] INFO  by.task.kukjan.entity.Ship - EXIT: Ship 4 ended unload
+21:05:37.717 [pool-2-thread-2] INFO  by.task.kukjan.entity.Port - Start unload
+21:05:37.717 [pool-2-thread-10] INFO  by.task.kukjan.entity.Port - Pier released
+21:05:37.717 [pool-2-thread-2] INFO  by.task.kukjan.entity.Port - Complete load, container amount: 4
+21:05:37.717 [pool-2-thread-10] INFO  by.task.kukjan.entity.Ship - EXIT: Ship 10 ended unload
+21:05:37.718 [pool-2-thread-2] INFO  by.task.kukjan.entity.Pier - Pier 7 processed ship 2 : Complete
+21:05:37.718 [pool-2-thread-2] INFO  by.task.kukjan.entity.Port - Pier released
+21:05:37.718 [pool-2-thread-2] INFO  by.task.kukjan.entity.Ship - EXIT: Ship 2 ended unload
+21:05:37.810 [pool-2-thread-8] INFO  by.task.kukjan.entity.Port - Start unload
+21:05:37.810 [pool-2-thread-8] INFO  by.task.kukjan.entity.Port - Complete load, container amount: 5
+21:05:37.810 [pool-2-thread-8] INFO  by.task.kukjan.entity.Pier - Pier 1 processed ship 8 : Complete
+21:05:37.810 [pool-2-thread-1] INFO  by.task.kukjan.entity.Port - Start load
+21:05:37.810 [pool-2-thread-8] INFO  by.task.kukjan.entity.Port - Pier released
+21:05:37.810 [pool-2-thread-1] INFO  by.task.kukjan.entity.Port - Complete load, container amount: 4
+21:05:37.810 [pool-2-thread-8] INFO  by.task.kukjan.entity.Ship - EXIT: Ship 8 ended unload
+21:05:37.810 [pool-2-thread-1] INFO  by.task.kukjan.entity.Pier - Pier 3 processed ship 1 : Complete
+21:05:37.811 [pool-2-thread-1] INFO  by.task.kukjan.entity.Port - Pier released
+21:05:37.811 [pool-2-thread-9] INFO  by.task.kukjan.entity.Port - Start load
+21:05:37.811 [pool-2-thread-1] INFO  by.task.kukjan.entity.Ship - EXIT: Ship 1 ended load
+21:05:37.811 [pool-2-thread-9] INFO  by.task.kukjan.entity.Port - Complete load, container amount: 3
+21:05:37.811 [pool-2-thread-9] INFO  by.task.kukjan.entity.Pier - Pier 2 processed ship 9 : Complete
+21:05:37.811 [pool-2-thread-9] INFO  by.task.kukjan.entity.Port - Pier released
+21:05:37.811 [pool-2-thread-9] INFO  by.task.kukjan.entity.Ship - EXIT: Ship 9 ended load
+21:05:38.104 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:05:38.305 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:05:38.505 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:05:38.707 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:05:38.913 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:05:39.115 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:05:39.330 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:05:39.536 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:05:39.739 [Timer-0] DEBUG by.task.kukjan.entity.Port - Timer
+21:09:43.464 [main] INFO  by.task.kukjan.parser.ShipParser - Lines parsed successfully
+21:09:43.472 [pool-2-thread-6] INFO  by.task.kukjan.entity.Ship - Ship 6 started unload
+21:09:43.472 [pool-2-thread-3] INFO  by.task.kukjan.entity.Ship - Ship 3 started load
+21:09:43.472 [pool-2-thread-7] INFO  by.task.kukjan.entity.Ship - Ship 7 started load
+21:09:43.472 [pool-2-thread-10] INFO  by.task.kukjan.entity.Ship - Ship 10 started unload
+21:09:43.472 [pool-2-thread-5] INFO  by.task.kukjan.entity.Ship - Ship 5 started load
+21:09:43.472 [pool-2-thread-2] INFO  by.task.kukjan.entity.Ship - Ship 2 started unload
+21:09:43.472 [pool-2-thread-8] INFO  by.task.kukjan.entity.Ship - Ship 8 started unload
+21:09:43.472 [pool-2-thread-9] INFO  by.task.kukjan.entity.Ship - Ship 9 started load
+21:09:43.472 [pool-2-thread-4] INFO  by.task.kukjan.entity.Ship - Ship 4 started unload
+21:09:43.472 [pool-2-thread-1] INFO  by.task.kukjan.entity.Ship - Ship 1 started load
+21:09:43.517 [pool-2-thread-9] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:09:43.517 [pool-2-thread-5] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:09:43.517 [pool-2-thread-1] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:09:43.517 [pool-2-thread-4] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:09:43.517 [pool-2-thread-7] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:09:43.517 [pool-2-thread-3] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:09:43.517 [pool-2-thread-8] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:09:43.518 [pool-2-thread-9] INFO  by.task.kukjan.entity.Port - Obtained pier 7
+21:09:43.517 [pool-2-thread-10] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:09:43.518 [pool-2-thread-3] INFO  by.task.kukjan.entity.Port - Obtained pier 6
+21:09:43.518 [pool-2-thread-2] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:09:43.518 [pool-2-thread-9] INFO  by.task.kukjan.entity.Pier - Pier 7 processes ship 9:Started
+21:09:43.518 [pool-2-thread-6] INFO  by.task.kukjan.entity.Port - Start obtaining pier
+21:09:43.518 [pool-2-thread-3] INFO  by.task.kukjan.entity.Pier - Pier 6 processes ship 3:Started
+21:09:43.518 [pool-2-thread-8] INFO  by.task.kukjan.entity.Port - Obtained pier 5
+21:09:43.518 [pool-2-thread-10] INFO  by.task.kukjan.entity.Port - Obtained pier 4
+21:09:43.518 [pool-2-thread-8] INFO  by.task.kukjan.entity.Pier - Pier 5 processes ship 8:Started
+21:09:43.519 [pool-2-thread-10] INFO  by.task.kukjan.entity.Pier - Pier 4 processes ship 10:Started

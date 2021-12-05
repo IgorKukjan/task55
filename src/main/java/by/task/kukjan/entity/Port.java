@@ -1,0 +1,196 @@
+package by.task.kukjan.entity;
+
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+public class Port {
+
+    private static final Logger logger = LogManager.getLogger();
+    private static Port instance;
+    private static final AtomicBoolean isInitialized = new AtomicBoolean(false);
+    private static final String PROPERTY_FILE_PATH = "property/sea_port.properties";
+
+    private static final double MAX_LOAD_FACTOR = 0.75;
+    private static final double MIN_LOAD_FACTOR = 0.25;
+
+    private static final int TIMER_MILLISECONDS_DELAY = 500;
+    private static final int TIMER_MILLISECONDS_INTERVAL = 200;
+
+    private Deque<Pier> freePiers = new ArrayDeque<>();
+    private Deque<Pier> busyPiers = new ArrayDeque<>();
+
+    private Lock pierLocking = new ReentrantLock(true); // создаем блокировку
+    private Condition freePierCondition = pierLocking.newCondition(); // получаем условие, связанное с блокировкой
+
+    private Lock containerStorageLocking = new ReentrantLock(true);
+    private Condition unloadAvailableCondition = containerStorageLocking.newCondition();
+    private Condition loadAvailableCondition = containerStorageLocking.newCondition();
+
+
+    private final int PIER_AMOUNT;
+    private final int CAPACITY;
+    private int currentContainerAmount;
+
+    private int waitingForLoadAmount;
+    private int waitingForUnloadAmount;
+
+    private Port(){
+        InputStream propertyFileStream = getClass().getClassLoader().getResourceAsStream(PROPERTY_FILE_PATH);
+        Properties properties = new Properties();
+        try {
+            properties.load(propertyFileStream);
+        } catch (IOException e) {
+            logger.log(Level.WARN, "Input stream is valid");
+        }
+
+        String capacityString = properties.getProperty("capacity");
+        String pierAmountString = properties.getProperty("pier_amount");
+        String containerAmountString = properties.getProperty("container_amount");
+
+        CAPACITY = Integer.parseInt(capacityString);
+        PIER_AMOUNT = Integer.parseInt(pierAmountString);
+        currentContainerAmount = Integer.parseInt(containerAmountString);
+
+        for(int i = 0; i < PIER_AMOUNT; i++){
+            freePiers.addLast(new Pier());
+        }
+
+        setTrainTask();
+    }
+
+
+    public static Port getInstance(){
+        while(instance == null){
+            if(isInitialized.compareAndSet(false, true)){
+                instance = new Port();
+            }
+        }
+        return instance;
+    }
+
+    public Pier obtainPier(){
+        logger.log(Level.INFO, "Start obtaining pier");
+        try{
+            pierLocking.lock();
+
+            if(freePiers.isEmpty()){
+
+                try {
+                    logger.log(Level.INFO, "Waiting for pier");
+                    freePierCondition.await();
+                } catch (InterruptedException e) {
+                    logger.log(Level.ERROR, "Error while obtaining pier: {}", e.getMessage());
+                    Thread.currentThread().interrupt();
+                }
+            }
+
+            Pier pier = freePiers.removeLast();
+            busyPiers.addLast(pier);
+            logger.log(Level.INFO, "Obtained pier {}", pier.getPierId());
+            return pier;
+        }finally {
+            pierLocking.unlock();
+        }
+    }
+
+    public void releasePier(Pier pier){
+        try{
+            pierLocking.lock();
+            busyPiers.remove(pier);
+            freePiers.addLast(pier);
+            freePierCondition.signal();
+            logger.log(Level.INFO, "Pier released");
+        }finally {
+            pierLocking.unlock();
+        }
+    }
+
+    public void loadContainer(){
+        try{
+            containerStorageLocking.lock();
+            logger.log(Level.INFO, "Start load");
+            if(currentContainerAmount == 0){
+                try {
+                    logger.log(Level.DEBUG, "Waiting for load");
+                    waitingForLoadAmount++;
+                    loadAvailableCondition.await();
+                    waitingForLoadAmount--;
+                } catch (InterruptedException e) {
+                    logger.log(Level.ERROR, "Error while loading container:{}", e.getMessage());
+                    Thread.currentThread().interrupt();
+                }
+            }
+            currentContainerAmount--;
+            logger.log(Level.INFO, "Complete load, container amount: {}", currentContainerAmount);
+        }finally {
+            containerStorageLocking.unlock();
+        }
+    }
+
+    public void unloadContainer(){
+        try{
+            containerStorageLocking.lock();
+            logger.log(Level.INFO, "Start unload");
+            if(currentContainerAmount == CAPACITY){
+                try {
+                    logger.log(Level.DEBUG, "Waiting for unload");
+                    waitingForUnloadAmount++;
+                    unloadAvailableCondition.await();
+                    waitingForUnloadAmount--;
+                } catch (InterruptedException e) {
+                    logger.log(Level.ERROR, "Error while unloading container:{}", e.getMessage());
+                    Thread.currentThread().interrupt();
+                }
+            }
+            currentContainerAmount++;
+            logger.log(Level.INFO, "Complete load, container amount: {}", currentContainerAmount);
+        }finally {
+            containerStorageLocking.unlock();
+        }
+    }
+
+    private void setTrainTask(){
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                try{
+                    containerStorageLocking.lock();
+                    double currentLoad = (double) currentContainerAmount / CAPACITY;
+
+                    if(currentLoad < MIN_LOAD_FACTOR){
+                        currentContainerAmount += (int) (MIN_LOAD_FACTOR * CAPACITY + 1);
+                    } else if (currentLoad > MAX_LOAD_FACTOR){
+                        currentContainerAmount -= (int) (MIN_LOAD_FACTOR * CAPACITY + 1);
+                    }
+
+                    int loadSignalCount = Math.min(currentContainerAmount, waitingForLoadAmount);
+                    for(int i = 0; i < loadSignalCount; i++){
+                        loadAvailableCondition.signal();
+                    }
+
+                    int unloadSignalCount = Math.min(CAPACITY - currentContainerAmount, waitingForUnloadAmount);
+                    for(int i = 0; i < unloadSignalCount; i++){
+                        unloadAvailableCondition.signal();
+                    }
+
+                    logger.log(Level.DEBUG, "Timer");
+
+                }finally {
+                    containerStorageLocking.unlock();
+                }
+            }
+        }, TIMER_MILLISECONDS_DELAY, TIMER_MILLISECONDS_INTERVAL);
+    }
+
+
+}
